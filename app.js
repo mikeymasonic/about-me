@@ -40,14 +40,15 @@ quizButton.addEventListener('click', () => {
     if (isYes(answer3)) count += 1;
 
     if (count >= 2) {
-        totalGood.textContent = `${name}, you got ${count} correct, that's pretty good, I guess...`;
+        totalGood.textContent = `${name}, you got ${count} correct, that's pretty good, I guess... ` + (Math.round((count / 3) * 100) + '%');
         document.getElementById('resultsGood').style.display = 'block';
         document.getElementById('results').style.display = 'block';
     } else {
-        totalBad.textContent = `${name}, you got ${count} correct, that was terrible!`;
+        totalBad.textContent = `${name}, you got ${count} correct, that was terrible! ` + (Math.round((count / 3) * 100) + '%');
         document.getElementById('resultsBad').style.display = 'block';
         document.getElementById('results').style.display = 'block';
     }
     
 });
+
 
