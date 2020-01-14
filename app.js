@@ -15,7 +15,6 @@ quizButton.addEventListener('click', () => {
     const answer1 = prompt('Do I like P5.js?');
     const answer2 = prompt('Do I like narcs?');
     const answer3 = prompt('Am I indeed a human?');
-    // let count = 0;
     if (isYes(answer1)) count += 1;
     if (!isYes(answer2)) count += 1;
     if (isYes(answer3)) count += 1;
