@@ -1,21 +1,35 @@
-// // IMPORT MODULES under test here:
-// import addThenDouble from '../addThenDouble.js';
+import isYes from '../is-yes.js';
 
-// const test = QUnit.test;
+const test = QUnit.test;
 
-// test('time to test a function', function(assert) {
-//     //Arrange
-//     // Set up your parameters and expectations
-//     const shouldBe12 = addThenDouble(2, 4); // 2+4 =6, 6*2 = 12
+test('Yes is true', function(assert) {
+    const shouldBeYesInput = 'Yes'; //checks to see if answer is 'Yes'
+    const shouldBeYesExpected = true;
+    const shouldBeYesResult = isYes(shouldBeYesInput);
 
+    assert.equal(shouldBeYesResult, shouldBeYesExpected);
+});
 
-//     //Act 
-//     // Call the function you're testing and set the result to a const
+test('No is false', function(assert) {
+    const shouldBeNoInput = 'No'; //checks to see if answer is 'No'
+    const shouldBeNoExpected = false;
+    const shouldBeNoResult = isYes(shouldBeNoInput);
 
-//     //Assert
-//     // Make assertions about what is expected valid result
-//     assert.equal(shouldBe12, 12);
+    assert.equal(shouldBeNoResult, shouldBeNoExpected);
+});
 
-//     const shouldBe40 = addThenDouble(18, 2);
-//     assert.equal(addThenDouble, )
-// });
+test('Y is true', function(assert) {
+    const shouldBeYInput = 'Y'; //checks to see if answer is 'Y'
+    const shouldBeYExpected = true;
+    const shouldBeYResult = isYes(shouldBeYInput);
+
+    assert.equal(shouldBeYResult, shouldBeYExpected);
+});
+
+test('yes is true', function(assert) {
+    const shouldBeyesInput = 'yes'; //checks to see if answer is 'yes'
+    const shouldBeyesExpected = true;
+    const shouldBeyesResult = isYes(shouldBeyesInput);
+
+    assert.equal(shouldBeyesResult, shouldBeyesExpected);
+});

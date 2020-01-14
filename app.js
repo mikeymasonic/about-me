@@ -15,5 +15,5 @@ quizButton.addEventListener('click', () => {
     if (isYes(answer1)) count += 1;
     if (!isYes(answer2)) count += 1;
     if (isYes(answer3)) count += 1;
-    total.textContent=`${name}, you got ${count} correct, that's pretty good, I guess...`;
+    total.textContent = `${name}, you got ${count} correct, that's pretty good, I guess...`;
 });
