@@ -5,29 +5,10 @@ const totalGood = document.getElementById('totalGood');
 const totalBad = document.getElementById('totalBad');
 let count = 0;
 
-
-// const hideResults = () => {
-//     Document.getElementById('results').style.display = 'none';
-// };
-
-// quizButton.addEventListener('click', () => {
-//     hideResults();
-// });
-
 quizButton.addEventListener('click', () => {
-    // console.log('button works');
-
-    // if (Document.getElementById('resultsBad').style.display) = 'block') {
-    //     Document.getElementById('resultsBad').style.display = 'none';
-    // };
-
-    // Document.getElementById('results').style.display = 'none';
-    // Document.getElementById('resultsBad').style.display = 'none';
-    // hideResults();
     if (count >= 1) {
         count = 0;   
     }
-    // document.getElementById('results').style.display = 'none';
     const name = prompt('What\'s yer name?');
     const confirmation = confirm(`${name}, are you for sure for sure you want to take this quiz?  It might be REALLY hard...`);
     if (confirmation === false) return;
