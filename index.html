@@ -16,9 +16,9 @@
     <main>
         <section>
         <h2>These are some things about me!</h2>
-        <img src ="./images/aboutmepic.jpg" height="300" width="400" alt="ambigious picture of me at a show"/>
+        <img src ="./images/aboutmepic.jpg" height="300" width="400" alt="ambigious picture of me at a show" id='image'/>
         </section>
-        <section>
+        <section id='things-i-like'>
             <h2>Things I like:</h2>
             <h3>
 
@@ -34,7 +34,7 @@
             </h3>
         </section>
 
-        <section>
+        <section id='things-i-dont-like'>
             <h2>Things I Don't Like In Numbered Order:</h2>
                 <h3>
                 <ol>
@@ -46,7 +46,7 @@
                 </h3>
         </section>
 
-        <section>
+        <section id='bio'>
             <h2>Bio</h2>
             <h4>
                 I am a human that was born on Earth.  Life is pretty chill, but I'm having a hard time uncovering the underlining meaning of it.  I'll report back ASAP if I find anything.  Thanks for visiting!
@@ -57,10 +57,16 @@
             <button id="quizbutton">How about a quiz?</button>
           </div>
           <!-- <section class="results" id="results" style='display: none'> -->
-          <section class="results" id="results" style='display: none'>
+        <div id='results'style='display: none'>  
+          <section class="resultsGood" id="resultsGood" style='display: none'>
             <h2>Your Results:</h2>
-            <p id="total"></p>
+            <p id="totalGood"></p>
           </section>
+          <section class="resultsBad" id="resultsBad" style='display: none'>
+            <h2>Your Results:</h2>
+            <p id="totalBad"></p>
+          </section>
+        </div>  
 
 
     </main>
